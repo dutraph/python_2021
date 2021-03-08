@@ -1,10 +1,18 @@
-cont = 1
-acumulador = 1
+sentence = 'o rato roeu a roupa do rei de roma'
+sentence_size = len(sentence)
+cont = 0
+new_string = ''
 
-while cont <= 10:
-    print(cont, acumulador)
+user_choice = input("Qual letra deseja tornar maiuscula: ")
 
-    acumulador+=cont
+while cont < sentence_size:
+    char = sentence[cont]
+    if char == user_choice:
+        new_string += user_choice.upper()
+    else:
+        new_string += char
     cont+=1
-else:
-    print('cheguei no else')
+
+print(new_string)
+# else: #while's else
+#     print('cheguei no else')
