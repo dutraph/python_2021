@@ -1,4 +1,4 @@
-from speedtest_cli import speedtest
+import speedtest
 from datetime import datetime
 import pandas as pd
 from threading import Timer
