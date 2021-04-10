@@ -1,4 +1,4 @@
-from flask_globo import app
+from desafios import app
 
 
 if __name__ == '__main__':

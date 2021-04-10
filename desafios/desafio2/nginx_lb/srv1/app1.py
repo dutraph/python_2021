@@ -4,7 +4,7 @@ import json
 app1 = Flask(__name__)
 
 
-@app1.route('/')
+@app1.route('/desafio')
 def challenge():
     return "desafio1"
 
