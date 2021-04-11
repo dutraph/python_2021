@@ -131,3 +131,6 @@ dmypy.json
 
 .vscode
 .idea
+
+#Apple file
+.DS_Store
