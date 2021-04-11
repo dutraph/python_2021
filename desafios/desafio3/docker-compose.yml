@@ -1,0 +1,13 @@
+version: "3"
+services:
+    flask:
+        build: ./flask
+        ports:
+            - "5001:5000"
+
+    nginx:
+        build: ./nginx
+        ports:
+            - "80:80"
+        depends_on:
+            - flask

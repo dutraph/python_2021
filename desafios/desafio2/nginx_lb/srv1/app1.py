@@ -1,8 +1,6 @@
-from flask import request, Flask
-import json
+from flask import Flask
 
 app1 = Flask(__name__)
-
 
 @app1.route('/desafio')
 def challenge():
