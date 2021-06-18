@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: desafio1
+  name: desafio1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: desafio1
+  template:
+    metadata:
+      labels:
+        app: desafio1
+    spec:
+      containers:
+      - image: dutraph/desafio1:latest
+        name: desafio1
+
+## kubectl expose pods <pod_name> --port=80 --type NodePort
